@@ -20,10 +20,10 @@ angular.module('insight.currency').controller('CurrencyController',
 
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'mDCR') {
+        } else if (this.symbol === 'mEXCC') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'atoms') {
+        } else if (this.symbol === 'exels') {
           this.factor = 100000000;
           response = _roundFloat((value * this.factor), 2);
         } else {
@@ -45,9 +45,9 @@ angular.module('insight.currency').controller('CurrencyController',
         Currency.get({}, function(res) {
           $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
         });
-      } else if (currency === 'mDCR') {
+      } else if (currency === 'mEXCC') {
         $rootScope.currency.factor = 1000;
-      } else if (currency === 'atoms') {
+      } else if (currency === 'exels') {
         $rootScope.currency.factor = 100000000;
       } else {
         $rootScope.currency.factor = 1;

@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: '/views/block.html',
-      title: 'Decred Block '
+      title: 'ExchangeCoin Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -17,7 +17,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: '/views/transaction.html',
-      title: 'Decred Transaction '
+      title: 'ExchangeCoin Transaction '
     }).
     when('/', {
       templateUrl: '/views/index.html',
@@ -25,15 +25,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: '/views/block_list.html',
-      title: 'Decred Blocks solved Today'
+      title: 'ExchangeCoin Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: '/views/block_list.html',
-      title: 'Decred Blocks solved '
+      title: 'ExchangeCoin Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: '/views/address.html',
-      title: 'Decred Address '
+      title: 'ExchangeCoin Address '
     }).
     when('/status', {
       templateUrl: '/views/status.html',

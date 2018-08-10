@@ -1,7 +1,7 @@
 'use strict';
 
 var defaultLanguage = localStorage.getItem('insight-language') || 'en';
-var defaultCurrency = localStorage.getItem('insight-currency') || 'DCR';
+var defaultCurrency = localStorage.getItem('insight-currency') || 'EXCC';
 
 angular.module('insight',[
   'ngclipboard',

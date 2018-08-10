@@ -1,6 +1,6 @@
 # *insight*
 
-Decred fork
+ExchangeCoin fork (based on Decred fork)
 
 *insight* is an open-source bitcoin blockchain explorer with complete REST
 and websocket APIs. Insight runs in NodeJS, uses AngularJS for the

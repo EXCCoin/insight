@@ -2,8 +2,8 @@
   "name": "insight-bitcore",
   "private": true,
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "0.2.7D",
-  "repository": "https://github.com/decred/insight",
+  "version": "0.2.7E",
+  "repository": "https://github.com/EXCCoin/insight",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -27,9 +27,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/decred/insight/issues"
+    "url": "https://github.com/EXCCoin/insight/issues"
   },
-  "homepage": "https://github.com/decred/insight",
+  "homepage": "https://github.com/EXCCoin/insight",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -37,13 +37,15 @@
     "blockexplorer",
     "bitcoin",
     "bitcore",
-    "front-end"
+    "front-end",
+    "exchangecoin",
+    "excc"
   ],
   "scripts": {
     "start": "INSIGHT_FORCE_RPC_SYNC=1 INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
   },
   "dependencies": {
-    "insight-bitcore-api": "decred/insight-api",
+    "insight-bitcore-api": "git@github.com:EXCCoin/insight-api#exchangecoin",
     "wide-align": "1.1.0"
   },
   "devDependencies": {
