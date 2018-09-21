@@ -1,7 +1,7 @@
 <div data-ng-include src="'/views/includes/connection.html'"></div>
-<section data-ng-controller="BlocksController" data-ng-init="findOne()">
+<section class="container" data-ng-controller="BlocksController" data-ng-init="findOne()">
   <div class="secondary_navbar hidden-xs hidden-sm" scroll data-ng-class="{'hidden': !secondaryNavbar}" data-ng-show="block.hash" data-ng-init="hideSNavbar=0">
-    <div class="container" data-ng-if="!hideSNavbar">
+    <div data-ng-if="!hideSNavbar">
       <div class="row">
         <div class="col-md-1">
           <a href="/block/{{block.previousblockhash}}"><span class="lead glyphicon glyphicon-chevron-left"></span></a>
@@ -9,6 +9,7 @@
         <div class="col-md-10">
           <div class="row">
             <div class="col-md-5">
+              test
               <h3 class="text-left"><span translate>Block</span> #{{block.height}}</h3>
             </div>
             <p class="col-md-6 ellipsis text-left">
@@ -23,7 +24,7 @@
           <a data-ng-show="block.nextblockhash" href="/block/{{block.nextblockhash}}"><span class="lead glyphicon glyphicon-chevron-right"></span></a>
         </div>
       </div>
-    </div> <!-- END OF CONTAINER -->
+    </div>
     <div class="hide_snavbar">
       <a href="#" data-ng-click="hideSNavbar=!hideSNavbar">
         <span data-ng-show="hideSNavbar"><span class="text-muted glyphicon glyphicon-chevron-down"></span></span>
