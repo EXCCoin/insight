@@ -304,7 +304,7 @@
   </div>
 </div>
 
-<div class="well well-sm bgwhite ellipsis" data-ng-if="itemsExpanded && !block.hash && tx.blockhash">
+<div class="well well-sm ellipsis" data-ng-if="itemsExpanded && !block.hash && tx.blockhash">
   <strong translate>Included in Block</strong> <a class="text-muted" href="/block/{{tx.blockhash}}">{{tx.blockhash}}</a>
   <span class="btn-copy" ngclipboard data-clipboard-text={{tx.blockhash}}></span>
 </div>
