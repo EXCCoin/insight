@@ -671,7 +671,7 @@ a.bg-danger:hover {
 .page-header {
     padding-bottom: 9px;
     margin: 40px 0 20px;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid rgba(210,215,255,0.1);
 }
 
 ul,
@@ -2415,9 +2415,8 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc
+    color: #fff;
+    background-color: #e01f9c;
 }
 
 .btn-default:hover,
@@ -2425,9 +2424,8 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-    color: #333;
-    background-color: #ebebeb;
-    border-color: #adadad
+    color: #ffffff;
+    background-color: rgba(96,112,219,0.5);
 }
 
 .btn-default:active,
@@ -2451,8 +2449,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-    background-color: #fff;
-    border-color: #ccc
+    background-color: rgba(224,31,156);
 }
 
 .btn-default .badge {
@@ -5699,11 +5696,9 @@ a.list-group-item-danger.active:focus {
 
 .panel {
     margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
+    background-color: rgba(210,215,255,0.1);
+    border: 1px solid rgba(210,215,255,0.05);
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
 }
 
 .panel-body {
@@ -5929,7 +5924,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-default {
-    border-color: #ddd
+    border: 1px solid rgba(210,215,255,0.05);
 }
 
 .panel-default>.panel-heading {
@@ -6038,13 +6033,8 @@ a.list-group-item-danger.active:focus {
 
 .well {
     min-height: 20px;
-    padding: 19px;
+    padding: 19px 0;
     margin-bottom: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05)
 }
 
 .well blockquote {
@@ -6053,12 +6043,12 @@ a.list-group-item-danger.active:focus {
 }
 
 .well-lg {
-    padding: 24px;
+    padding: 24px 0;
     border-radius: 6px
 }
 
 .well-sm {
-    padding: 9px;
+    padding: 9px 0;
     border-radius: 3px
 }
 
@@ -7072,16 +7062,16 @@ h6,
 }
 
 .navbar {
-    min-height: 80px
+
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fff;
+    border: 1px solid rgba(210,215,255,0.3);
     margin-top: 15px
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff
+    background-color: rgba(210,215,255,0.3);
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -7378,22 +7368,17 @@ h6,
 .block-tx {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    background-color: #F4F4F4;
     border-radius: 2px;
     margin: 20px 0 10px;
     overflow: hidden;
     padding: 15px;
-    border: 1px solid #eee
+    border: 1px solid rgba(210,215,255,0.1);
 }
 
 .btn {
     font-size: 1.6rem;
-    color: #2970ff;
-    background-color: #fff;
-    border-color: #2970ff;
+    color: #ffffff;
     margin: 40px 10px 0 0;
-    color: #2970ff;
-    border-color: #2970ff;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -7432,11 +7417,11 @@ h6,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-    background-color: #fff
+    background-color: rgba(96,112,219,0.5); 
 }
 
 .btn-default {
-    background-color: #E7E7E7
+    background-color: #6070db;
 }
 
 .btn-success {
@@ -7467,16 +7452,15 @@ h6,
 }
 
 .txvalues-success {
-    background-color: #41bf53
+    background-color: #e01f9c;
 }
 
 .txvalues-primary {
-    background-color: #2970ff
+    background-color: #6070db;
 }
 
 .txvalues-default {
-    color: #333;
-    background-color: #ebebeb
+    color: #fff;
 }
 
 .txvalues-default.fee {
@@ -7563,7 +7547,8 @@ h6,
     background-image: url(/img/calendar.svg);
     background-size: 25px;
     background-repeat: no-repeat;
-    display: inline-block
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .progress-bar-info {
@@ -7615,7 +7600,6 @@ h6,
 }
 
 .line-bot {
-    border-bottom: 2px solid #EAEAEA;
     padding: 0 0 10px
 }
 
@@ -7624,13 +7608,13 @@ h6,
 }
 
 .line-top {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid rgba(210,215,255,0.1);
     padding: 15px 0 0
 }
 
 .date {
-    font-size: 3.4rem;
-    color: #2970ff
+    font-size: 2.4rem;
+    color: rgba(210,215,255);
 }
 
 #wrap>.container {
@@ -7911,9 +7895,10 @@ h6,
 .v_highlight {
     margin-bottom: 1em;
     padding: 1em 0;
-    background-color: #e9e9e9;
+    background-color: rgba(210,215,255,0.1);
+    border: 1px solid rgba(210,215,255,0.05);
     overflow: hidden;
-    color: #333
+    color: #fff;
 }
 
 a.v_highlight_more {
@@ -7923,16 +7908,16 @@ a.v_highlight_more {
 
 .secondary_navbar {
     width: 100%;
-    background: #fff;
+    background: rgba(0,0,56,0.9);
     position: fixed;
-    top: 64px;
     left: 0;
     text-align: center;
     z-index: 1000;
     margin: 0 auto;
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .20);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .20);
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .20)
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .20);
+    border: 1px solid rgba(210,215,255,0.1);
 }
 
 .secondary_navbar .container {
@@ -7956,10 +7941,10 @@ a.v_highlight_more {
     position: absolute;
     right: 25px;
     padding: 5px 10px;
-    background: #fff;
     -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .20);
     -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .20);
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .20)
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .20);
+    border-top: none;
 }
 
 #search-form-mobile {
@@ -8054,7 +8039,7 @@ a.v_highlight_more {
         margin-top: 7px
     }
     .navbar {
-        min-height: 80px
+
     }
     #search {
         color: #000
@@ -8073,16 +8058,16 @@ a.v_highlight_more {
         color: #fff
     }
     .txvalues-success {
-        color: #41bf53
+        color: #ffffff;
     }
     .txvalues-primary {
-        color: #2970ff
+        color: #ffffff;
     }
     .txvalues-default {
-        color: #A09E9E
+        color: #ffffff;
     }
     .txvalues-danger {
-        color: #AC0015
+        color: #ffffff;
     }
 }
 
